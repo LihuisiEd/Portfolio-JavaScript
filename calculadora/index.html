@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Rubik:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="font-sans bg-slate-800 text-zinc-50" style="font-family: 'Rubik', sans-serif;">
+    <div class="container mx-auto p-8">
+        <div class="flex justify-center">
+            <h1 class="text-3xl font-bold my-8 text-clifford">
+                Calculadora
+            </h1>
+        </div>
+        <div class="container">
+            <p class="text-lg font-normal">🚀 Esta calculadora está hecha con Javascript! 🍕</p>
+            <p class="text-lg text-slate-500 font-normal">Intenta calcular algo tontit@</p>
+        </div>
+
+        <div class="result-container">
+            <div class="grid grid-cols-3 gap-4 max-w-96 my-4">
+                <div
+                    class="text-lg w-full bg-slate-200 h-16 col-span-2 flex items-center px-4 text-slate-800 content-center result-container rounded ">
+                    <p class="font-medium"></p>
+                </div>
+                <button
+                    class="transition bg-red-500 shadow-md font-bold hover:scale-110 hover:bg-red-300 duration-300 rounded  ">
+                    Clear
+                </button>
+            </div>
+        </div>
+
+        <div class="operation-container">
+            <div class="grid grid-cols-4 gap-4 text-lg grid-flow-row max-w-96 my-4">
+                <button
+                    class="transition  bg-teal-400  py-4 font-bold hover:scale-110 hover:bg-cyan-300 duration-300 rounded">
+                    +
+                </button>
+                <button
+                    class="transition  bg-teal-400  py-4 font-bold hover:scale-110 hover:bg-cyan-300 duration-300 rounded">
+                    -
+                </button>
+                <button
+                    class="transition  bg-teal-400 py-4 font-bold hover:scale-110 hover:bg-cyan-300 duration-300 rounded">
+                    x
+                </button>
+                <button
+                    class="transition  bg-teal-400 py-4 font-bold hover:scale-110 hover:bg-cyan-300 duration-300 rounded">
+                    /
+                </button>
+            </div>
+        </div>
+
+        <div class="number-container">
+            <div class="grid grid-cols-3 text-lg grid-flow-row gap-4 max-w-96">
+                <button
+                    class="transition  bg-slate-500 shadow-md py-4 font-bold hover:scale-110 hover:bg-slate-300 duration-300 rounded  ">
+                    1
+                </button>
+                <button
+                    class="transition  bg-slate-500 shadow-md py-4 font-bold hover:scale-110 hover:bg-slate-300 duration-300 rounded ">
+                    2
+                </button>
+                <button
+                    class="transition  bg-slate-500 py-4 font-bold hover:scale-110 hover:bg-slate-300 duration-300 rounded ">
+                    3
+                </button>
+                <button
+                    class="transition bg-slate-500 py-4 font-bold hover:scale-110 hover:bg-slate-300 duration-300 rounded ">
+                    4
+                </button>
+                <button
+                    class="transition bg-slate-500 py-4 font-bold hover:scale-110 hover:bg-slate-300 duration-300 rounded ">
+                    5
+                </button>
+                <button
+                    class="transition bg-slate-500 py-4 font-bold hover:scale-110 hover:bg-slate-300 duration-300 rounded ">
+                    6
+                </button>
+                <button
+                    class="transition bg-slate-500 py-4 font-bold hover:scale-110 hover:bg-slate-300 duration-300 rounded ">
+                    7
+                </button>
+                <button
+                    class="transition bg-slate-500 py-4 font-bold hover:scale-110 hover:bg-slate-300 duration-300 rounded ">
+                    8
+                </button>
+                <button
+                    class="transition bg-slate-500  py-4 font-bold hover:scale-110 hover:bg-slate-300 duration-300 rounded ">
+                    9
+                </button>
+                <button
+                    class="transition bg-slate-500 py-4 font-bold hover:scale-110 hover:bg-slate-300 duration-300 rounded ">
+                    0
+                </button>
+                <button
+                    class="calculate-button transition bg-gradient-to-r from-teal-400 to-cyan-400 py-4 font-bold col-span-2 hover:scale-110 hover:from-pink-500 hover:to-yellow-500 duration-300 rounded ">
+                    =
+                </button>
+            </div>
+            <div class="py-4">
+                Creado por 
+                <a href="https://github.com/LihuisiEd" class="text-slate-500" >
+                    LihuisiEd
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

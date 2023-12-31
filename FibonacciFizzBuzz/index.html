@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth focus:scroll-auto">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Items</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Rubik:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+
+
+
+</head>
+
+<body>
+    <div>
+        <div class="flex justify-start md:justify-center mx-4 mt-4">
+            <div class="grid grid-cols-2 gap-4 w-2/3 place-content-evenly justify-items-start sm:justify-items-center">
+                <div class="self-center mx-auto">
+                    <h1 class="font-bold text-2xl  md:text-4xl lg:text-6xl">Fibonacci!</h1>
+                </div>
+                <div class="self-center invisible md:visible">
+                    <dotlottie-player class="bg-cyan-50 rounded-full w-16 h-16 md:w-28 md:h-28 lg:w-64 lg:h-64 "
+                        src="https://lottie.host/297a2fb0-a8d8-491c-805c-5480396bf6b3/emde9Q0MVS.json"
+                        background="transparent" speed="1" loop
+                        autoplay></dotlottie-player>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="container mx-auto py-4">
+                <div class=" relative flex items-center mx-4">
+                    <div class="absolute cursor-pointer inset-y-0 left-0 pl-3 flex items-center">
+                        <svg class="text-slate-400 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <input id="fibonacciInput" type="number" placeholder="Enter a number"
+                        class="pl-10 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500 py-2 px-4 w-full sm:w-64">
+                    <button onclick="generateFibonacci()"
+                        class="ml-4 p-2 bg-gradient-to-r from-violet-500 to-cyan-400 rounded-lg shadow-xl font-bold text-zinc-50 sm:p-2">
+                        Generate
+                    </button>
+                </div>
+
+                <div id="fibonacciContainer" class="Fibonacci grid justify-items-center xl:grid-cols-8 sm:grid-cols-4  container mx-auto py-4 sm:justify-center"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

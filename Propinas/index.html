@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propinas</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Quicksand&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="dark:bg-neutral-800 text-white">
+    <div class="flex justify-center items-center ">
+        <div class="max-w-lg">
+            <div class="md:container md:mx-auto py-4">
+                <div>
+                    <h2 class="text-5xl font-thin font1">Calcular propina</h2>
+                    <p class="text-xl py-4 font2">Estas en un restaurante de primera, y recibiste la mejor atención, debes dejar una
+                        propina. Decide cuanto
+                        dejar</p>
+                </div>
+                <div>
+                    <label for="title" class="block text-gray-700 dark:text-white font-normal py-2 font1">Pago total</label>
+                    <input type="number" id="totalPayment"
+                        class="mb-2 p-2 border rounded-md w-full focus:border-purple-500 dark:bg-neutral-950 font2"
+                        placeholder="Ingresar pago total">
+                    <label for="title" class="block text-gray-700 dark:text-white py-2 font-normal font1">Porcentaje de propina
+                        (%)</label>
+                    <input type="number" id="tipPercentage"
+                        class="mb-2 p-2 border rounded-md w-full focus:border-purple-500 dark:bg-neutral-950 font2"
+                        placeholder="Colocar porcentaje">
+                    <button id="calculateTip"
+                        class="bg-gradient-to-r font-normal font1 from-indigo-500 via-purple-500 to-pink-500 text-white my-2 p-2 rounded-md shadow-xl shadow-purple-500/50 transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none outline outline-0 hover:outline-2">Calcular</button>
+                </div>
+                <div id="result"
+                    class="mt-4 font-thin font2 text-2xl p-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-xl shadow-purple-500/50 rounded-lg outline outline-0 hover:outline-2">
+                    Resultado</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

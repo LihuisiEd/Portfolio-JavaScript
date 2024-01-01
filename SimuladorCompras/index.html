@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de compras</title>
+    <script src="https://kit.fontawesome.com/b6922e56d9.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="relative h-full overflow-hidden bg-yellow-100 font1">
+        <div class="absolute lg:-left-2/4 lg:-top-2/4  2xl:-left-1/4 2xl:-top-full w-full invisible lg:visible">
+            <svg viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="60" cy="60" r="50" fill="white" />
+            </svg>
+        </div>
+
+        <div class="titulo container relative my-16 sm:my-64 mx-auto bg-cover bg-center text-center">
+            <h1 class="text-gray-700 text-6xl sm:text-8xl font-bold">
+                <i class="fa-solid fa-cash-register"></i>
+                Hell-mmerce!
+            </h1>
+            <div
+                class="text-gray-700 my-2 text-xl sm:text-2xl bg-white w-fit p-2 mx-auto bg-cover bg-center text-center">
+                What you need at the click of a button
+            </div>
+        </div>
+    </div>
+
+    <div class="font1 container mx-auto mb-16">
+        <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 justify-items-center mx-4 sm:mx-0">
+            <div class="card bg-gray-100 w-full h-96 sm:w-72 shadow-md mb-4 relative">
+                <div class="bg-cover bg-no-repeat bg-center h-64 transition ease-in-out delay-75 duration-100
+                overflow-auto brightness-90 hover:brightness-100"
+                    style="background-image: url('images/estanteria.jpg')">
+                </div>
+                <div class="card-detail p-2">
+                    <div class="text-xl">
+                        Estanteria
+                    </div>
+                    <div class="py-2">
+                        S/.58.98
+                    </div>
+                    <div class="text-white">
+                        <button
+                            class="transition ease-in-out  bg-indigo-500 hover:bg-indigo-400 font-bold py-2 px-4 absolute inset-x-0 bottom-0 add-to-cart"
+                            data-productName="Estanteria" data-productPrice="58.98">
+                            
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-gray-100 w-full h-96 sm:w-72 shadow-md mb-4 relative">
+                <div class="bg-cover bg-no-repeat bg-center h-64 transition ease-in-out delay-75 duration-100
+                overflow-auto brightness-90 hover:brightness-100" style="background-image: url('images/florero.jpg')">
+                </div>
+                <div class="card-detail p-2">
+                    <div class="text-xl">
+                        Florero
+                    </div>
+                    <div class="py-2">
+                        S/.20.30
+                    </div>
+                    <div class="text-white">
+                        <button
+                            class="transition ease-in-out  bg-indigo-500 hover:bg-indigo-400 font-bold py-2 px-4 absolute inset-x-0 bottom-0 add-to-cart"
+                            data-productName="Florero" data-productPrice="20.30">
+                            
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-gray-100 w-full h-96 sm:w-72 shadow-md mb-4 relative">
+                <div class="bg-cover bg-no-repeat bg-center h-64 transition ease-in-out delay-75 duration-100
+                overflow-auto brightness-90 hover:brightness-100" style="background-image: url('images/jabones.jpg')">
+                </div>
+                <div class="card-detail p-2">
+                    <div class="text-xl">
+                        Jabones
+                    </div>
+                    <div class="py-2">
+                        S/.30.00
+                    </div>
+                    <div class="text-white">
+                        <button
+                            class="transition ease-in-out  bg-indigo-500 hover:bg-indigo-400 font-bold py-2 px-4 absolute inset-x-0 bottom-0 add-to-cart"
+                            data-productName="Jabones" data-productPrice="30.00">
+                            
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-gray-100 w-full h-96 sm:w-72 shadow-md mb-4 relative">
+                <div class="bg-cover bg-no-repeat bg-center h-64 transition ease-in-out delay-75 duration-100
+                overflow-auto brightness-90 hover:brightness-100"
+                    style="background-image: url('images/licuadora.jpg')">
+                </div>
+                <div class="card-detail p-2">
+                    <div class="text-xl">
+                        Licuadora
+                    </div>
+                    <div class="py-2">
+                        S/.78.40
+                    </div>
+                    <div class="text-white">
+                        <button
+                            class="transition ease-in-out  bg-indigo-500 hover:bg-indigo-400 font-bold py-2 px-4 absolute inset-x-0 bottom-0 add-to-cart"
+                            data-productName="Licuadora" data-productPrice="78.40">
+                            
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-gray-100 w-full h-96 sm:w-72 shadow-md mb-4 relative">
+                <div class="bg-cover bg-no-repeat bg-center h-64 transition ease-in-out delay-75 duration-100
+                overflow-auto brightness-90 hover:brightness-100" style="background-image: url('images/luces.jpg')">
+                </div>
+                <div class="card-detail p-2">
+                    <div class="text-xl">
+                        Luces
+                    </div>
+                    <div class="py-2">
+                        S/.28.50
+                    </div>
+                    <div class="text-white">
+                        <button
+                            class="transition ease-in-out  bg-indigo-500 hover:bg-indigo-400 font-bold py-2 px-4 absolute inset-x-0 bottom-0 add-to-cart"
+                            data-productName="Luces" data-productPrice="28.50">
+                            
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-gray-100 w-full h-96 sm:w-72 shadow-md mb-4 relative">
+                <div class="bg-cover bg-no-repeat bg-center h-64 transition ease-in-out delay-75 duration-100
+                overflow-auto brightness-90 hover:brightness-100" style="background-image: url('images/macetero.jpg')">
+                </div>
+                <div class="card-detail p-2">
+                    <div class="text-xl">
+                        Macetero
+                    </div>
+                    <div class="py-2">
+                        S/.37.47
+                    </div>
+                    <div class="text-white">
+                        <button
+                            class="transition ease-in-out  bg-indigo-500 hover:bg-indigo-400 font-bold py-2 px-4 absolute inset-x-0 bottom-0 add-to-cart"
+                            data-productName="Macetero" data-productPrice="37.47">
+                            
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-gray-100 w-full h-96 sm:w-72 shadow-md mb-4 relative">
+                <div class="bg-cover bg-no-repeat bg-center h-64 transition ease-in-out delay-75 duration-100
+                overflow-auto brightness-90 hover:brightness-100"
+                    style="background-image: url('images/portalapices.jpg')">
+                </div>
+                <div class="card-detail p-2">
+                    <div class="text-xl">
+                        Portalapices
+                    </div>
+                    <div class="py-2">
+                        S/.15.50
+                    </div>
+                    <div class="text-white">
+                        <button
+                            class="transition ease-in-out  bg-indigo-500 hover:bg-indigo-400 font-bold py-2 px-4 absolute inset-x-0 bottom-0 add-to-cart"
+                            data-productName="Portalapices" data-productPrice="15.50">
+                            
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-gray-100 w-full h-96 sm:w-72 shadow-md mb-4 relative">
+                <div class="bg-cover bg-no-repeat bg-center h-64 transition ease-in-out delay-75 duration-100
+                overflow-auto brightness-90 hover:brightness-100"
+                    style="background-image: url('images/television.jpg')">
+                </div>
+                <div class="card-detail p-2">
+                    <div class="text-xl">
+                        TV
+                    </div>
+                    <div class="py-2">
+                        S/.499.00
+                    </div>
+                    <div class="text-white">
+                        <button
+                            class="transition ease-in-out  bg-indigo-500 hover:bg-indigo-400 font-bold py-2 px-4 absolute inset-x-0 bottom-0 add-to-cart"
+                            data-productName="TV" data-productPrice="499.00">
+                            
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-gray-100 w-full h-96 sm:w-72 shadow-md mb-4 relative">
+                <div class="bg-cover bg-no-repeat bg-center h-64 transition ease-in-out delay-75 duration-100
+                overflow-auto brightness-90 hover:brightness-100"
+                    style="background-image: url('images/tomatodos.jpg')">
+                </div>
+                <div class="card-detail p-2">
+                    <div class="text-xl">
+                        Pack de Tomatodos
+                    </div>
+                    <div class="py-2">
+                        S/.45.00
+                    </div>
+                    <div class="text-white">
+                        <button
+                            class="transition ease-in-out  bg-indigo-500 hover:bg-indigo-400 font-bold py-2 px-4 absolute inset-x-0 bottom-0 add-to-cart"
+                            data-productName="Pack de Tomatodos" data-productPrice="45.00">
+                            
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-white font-bold">
+        <button
+            class="fixed  inset-x-0 bottom-0 h-16 bg-indigo-500 transition hover:scale-125 hover:bg-indigo-400 calculate-price">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+            Calculate price
+        </button>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="hidden fixed  inset-0 bg-black bg-opacity-50">
+        <div class="bg-white p-6 flex flex justify-center items-center content-center">
+            <div class="modal-content text-2xl" id="modalContent"></div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

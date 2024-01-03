@@ -14,18 +14,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Logo.ico">
 </head>
 
 <body class="dark:bg-neutral-800">
     <div class="navbar bg-amber-400">
         <div class="flex justify-center py-4 text-2xl">
-            <a class="font-bold">ToDoo</a>
+            <div>
+                <img src="Logo_flor.png" alt="Logo" width="30" class="mr-4">
+            </div>
+            <a class="font-bold text-white">ToDoo</a>
+            <button
+                class="text-xs mx-4 px-4 bg-white/50 rounded-full transition duration-300 ease-in-out hover:scale-110 hover:text-white"><a href="https://github.com/LihuisiEd/Portfolio-JavaScript"><i
+                        class="fa-brands fa-github mr-2"></i>Eduardo Lihuisi</a></button>
         </div>
 
     </div>
     <div class="md:container md:mx-auto py-4">
         <button id="addTodo"
-            class="border-dashed bg-gray-100 border-2 border-zinc-600 p-2 rounded-lg transition duration-300 ease-in-out hover:scale-110 focus:outline-none focus:ring focus:border-blue-500 dark:bg-neutral-950 dark:text-white">
+            class="border-dashed bg-gray-100 border-2 mx-2 sm:mx-0 border-zinc-600 p-2 rounded-lg transition duration-300 ease-in-out hover:scale-110 focus:outline-none focus:ring focus:border-blue-500 dark:bg-neutral-950 dark:text-white">
             <i class="fa-solid fa-circle-plus"></i>
             Add ToDoo
         </button>
@@ -34,10 +41,11 @@
         <div id="modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
             <div class="bg-white p-6 rounded-lg dark:bg-neutral-800 dark:text-white max-w-96">
                 <h2 class="text-2xl font-bold mb-4">Add New ToDo</h2>
-                <label for="title" class="block text-gray-700 dark:text-white">Title:</label>
-                <input type="text" id="title" class="mb-2 p-2 border rounded-md w-full dark:bg-neutral-950" placeholder="Enter title">
+                <label for="title" class="block dark:text-white text-md text-gray-400 mb-2">Title</label>
+                <input type="text" id="title" class="mb-2 p-2 border rounded-md w-full dark:bg-neutral-950"
+                    placeholder="Enter title">
 
-                <label for="description" class="block text-gray-700 dark:text-white">Description:</label>
+                <label for="description" class="block dark:text-white text-md text-gray-400 mb-2">Description</label>
                 <textarea id="description" class="mb-4 p-2 border rounded-md w-full dark:bg-neutral-950"
                     placeholder="Enter description"></textarea>
 
@@ -52,7 +60,8 @@
                 class="hidden note bg-gray-100 p-4 shadow-md border-dashed border-2 border-zinc-600 rounded-lg sm:max-w-72 w-full divide-y-2 divide-dashed dark:divide-neutral-500 dark:bg-neutral-950 dark:text-white">
                 <div class="pb-2 flex justify-between">
                     <h2 class="font-bold">Title</h2>
-                    <button class="delete-button bg-red-500 w-7 h-7 border-dashed border-2 border-red-800 rounded-lg rounded-lg transition duration-300 ease-in-out hover:scale-110 dark:border-none">
+                    <button
+                        class="delete-button bg-red-500 w-7 h-7 border-dashed border-2 border-red-800 rounded-lg rounded-lg transition duration-300 ease-in-out hover:scale-110 dark:border-none">
                         <i class="fa-solid fa-xmark fa-lg"></i>
                     </button>
                 </div>
@@ -60,7 +69,8 @@
                     <p>Description</p>
                 </div>
                 <div class="py-2 flex justify-end">
-                    <button class="edit-button border-dashed border-2 border-zinc-600 bg-amber-400 w-7 h-7 rounded-lg font-bold transition duration-300 ease-in-out hover:scale-110 dark:border-none">
+                    <button
+                        class="edit-button border-dashed border-2 border-zinc-600 bg-amber-400 w-7 h-7 rounded-lg font-bold transition duration-300 ease-in-out hover:scale-110 dark:border-none">
                         <i class="fa-solid fa-pen"></i>
                     </button>
                 </div>

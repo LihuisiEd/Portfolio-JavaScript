@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number</title>
+    <script src="script.js" defer></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/b6922e56d9.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Quicksand&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-gray-200" style="font-family: 'Quicksand', sans-serif;">
+    <div>
+        <div class="flex justify-around text-white p-4 text-xl font-bold shadow-lg" style="background-color: #756AB6;">
+            <div class="text-red-500 bg-white p-2 rounded-full w-32 text-center flex justify-evenly">
+                <div>
+                    <i class="fa-solid fa-heart fa-lg"></i>
+                </div>
+                <div id="lives" class="transition ease-in-out duration-300 bg-transparent"> 3</div>
+            </div>
+            <div>
+                Score: <span id="score">0</span>
+            </div>
+        </div>
+        <br/>
+        <div class="flex justify-center items-center ">
+            <div class="relative container max-w-lg bg-white rounded-xl p-6 shadow-lg">
+                <div class="mb-4">
+                    <div class="mb-4">
+                        <div class="text-4xl font-bold mb-4">
+                            Guess a number!
+                        </div>
+                        <div class="text-xl">
+                            between <span id="minRange" class="font-bold"></span> and <span id="maxRange"
+                                class="font-bold"></span></div>
+                        <input type="number" id="guess"
+                            class="rounded-lg border border-gray-300 focus:outline-none focus:border-purple-500">
+                        <button id="guessButton" onclick="checkGuess()"
+                            class="transition ease-in-out p-2 rounded-lg text-white text-xl hover:shadow-lg duration-300 hover:shadow-purple-300"
+                            style="background-color: #AC87C5" ;>Guess</button>
+                    </div>
+                    <div class="grid grid-cols-3 gap-4 content-start">
+                        <button id="clue1" class="transition ease-in-out p-2 rounded-lg text-white text-xl hover:shadow-lg duration-300 hover:shadow-purple-300"
+                            style="background-color: #E0AED0;">
+                            <i class="fa-regular fa-lightbulb"></i> 1
+                        </button>
+                        <button id="clue2" class="transition ease-in-out p-2 rounded-lg text-white text-xl hover:shadow-lg duration-300 hover:shadow-purple-300"
+                            style="background-color: #E0AED0;"><i class="fa-regular fa-lightbulb"></i>
+                            2</button>
+                        <button id="clue3" class="transition ease-in-out p-2 rounded-lg text-white text-xl hover:shadow-lg duration-300 hover:shadow-purple-300"
+                            style="background-color: #E0AED0;"><i class="fa-regular fa-lightbulb"></i>
+                            3</button>
+                    </div>
+                </div>
+                <div class="text-xl rounded-lg" style="background-color: #756AB6;">
+                    <div id="message" class="p-4 text-white font-bold"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
